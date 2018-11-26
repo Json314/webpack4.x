@@ -1,7 +1,7 @@
 **install the dependencies**  
 `cnpm install`
 
-**mode: development**
+**mode: development**  
 `cnpm run dev`
 
 **mode: production**  
