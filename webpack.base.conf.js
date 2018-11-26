@@ -10,6 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].min.js',
+    publicPath: '/',                      // 解决图片路径问题
     chunkFilename: "[name].chunk.js"
   },
   module: {
@@ -25,7 +26,7 @@ module.exports = {
       },
       {
         test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
-        loader: 'url-loader?limit=8192&name=img/[name].[ext]'
+        loader: 'url-loader?limit=8192&name=img/[name].[hash:8].[ext]'
       }
     ]
   },
