@@ -1,1 +1,1 @@
-require('./assets/js/c.js');
+require('./assets/js/a.js');
